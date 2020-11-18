@@ -49,7 +49,7 @@ parser.on("data", (data) => {
     mdata[1] = temp; //data
     mdata[2] = humi;
     mdata[3] = lux;
-    console.log("AA09, AA12 " + mdata);
+    console.log("AA11, AA14 " + mdata);
     io.sockets.emit("message", mdata); // send data to all clients
   } else {
     console.log(readData);
